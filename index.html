@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sorteo de Premios</title>
+
+  <!-- Cargar Bootstrap desde el CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- SweetAlert2 -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <!-- Lottie (Animaciones JSON) -->
+  <script src="https://cdn.jsdelivr.net/npm/lottie-web@5.9.4/build/player/lottie.min.js"></script>
+
+  <!-- Anime.js -->
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main-container">
+        <img class="logo" src="/logo-servicioalfilo.png">
+        <div class="container py-5">
+            <h1 class="text-center mb-4 text-primary">🎉 ¡Sorteo IBK! 🎉</h1>
+
+            <!-- Bloques del sorteo -->
+            <!-- Primer Bloque: Medias -->
+            <section id="bloque1" class="my-5">
+                <h2 class="text-center text-success"> Bloque 1: Medias IBK </h2>
+                <img src="https://content-us-2.content-cms.com/9b3f67ef-5a9f-4acc-8ce8-bcc27fa681c7/dxdam/b3/b377ab19-6bf3-4ea6-9283-d53abeb5c331/img_cta_f4_whatsapp-web_tablet%402x-min.png?t=1680281435062" alt="Medias" class="logo1">
+                <button class="btn btn-lg btn-primary d-block mx-auto my-3" onclick="realizarSorteo(1)">
+                    Realizar Sorteo de Medias
+                </button>
+                <div id="gif-sorteo-bloque1" class="text-center my-4 hidden">
+                    <img src="/GIF 1.gif" alt="Sorteo en curso...">
+                </div>
+                <div id="ganadores-bloque1" class="row mt-4 text-center"></div>
+                <button id="download-bloque1" class="btn btn-success my-3 hidden" onclick="descargarGanadores(1)">
+                    Descargar Ganadores
+                  </button>
+            </section>
+
+            <!-- Segundo Bloque: Tomatodos y Gorros -->
+            <section id="bloque2" class="my-5">
+                <h2 class="text-center text-info"> Bloque 2: Tomatodos y Gorros IBK </h2>
+                <img src="https://content-us-2.content-cms.com/9b3f67ef-5a9f-4acc-8ce8-bcc27fa681c7/dxdam/71/71bc846b-1c9a-4743-aa2d-993572aef4eb/TBL_ilustracion_sabermas528x580.png" alt="Medias" class="logo2">
+                <button class="btn btn-lg btn-warning d-block mx-auto my-3" onclick="realizarSorteo(2)">
+                    Realizar Sorteo de Tomatodos y Gorros
+                </button>
+                <div id="gif-sorteo-bloque2" class="text-center my-4 hidden">
+                    <img src="/GIF 2.gif" alt="Sorteo en curso...">
+                </div>
+                <div id="ganadores-bloque2" class="row mt-4 text-center"></div>
+                <button id="download-bloque2" class="btn btn-success my-3 hidden" onclick="descargarGanadores(2)">
+                    Descargar Ganadores
+                </button>
+            </section>
+
+            <!-- Tercer Bloque: Polos Piqué y Hoodies -->
+            <section id="bloque3" class="my-5">
+                <h2 class="text-center text-danger">Bloque 3: Polos Piqué y Hoodies IBK</h2>
+                <img src="https://interbank.pe/documents/20124/797321/busqueda%402x.png/6b5699dc-3712-c751-54a1-893d913bf1fb?t=1652911339581" alt="Medias" class="logo3">
+                <button class="btn btn-lg btn-success d-block mx-auto my-3" onclick="realizarSorteo(3)">
+                    Realizar Sorteo de Polos Piqué y Hoodies
+                </button>
+                <div id="gif-sorteo-bloque3" class="text-center my-4 hidden">
+                    <img src="/GIF 4.gif" alt="Sorteo en curso...">
+                </div>
+                <div id="ganadores-bloque3" class="row mt-4 text-center"></div>
+                <button id="download-bloque3" class="btn btn-success my-3 hidden" onclick="descargarGanadores(3)">
+                    Descargar Ganadores
+                </button>
+            </section>
+        </div>
+    </div>
+    <!-- Cargar jQuery y Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <!-- Nuestro script personalizado -->
+    <script src="script.js"></script>
+</body>
+</html>
