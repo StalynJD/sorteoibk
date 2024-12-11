@@ -560,11 +560,11 @@ function asignarPremioAleatorio(premios) {
 // Función para obtener la imagen referencial según el premio
 function getImagenParaPremio(premio) {
   const imagenes = {
-    'Medias': '/medias.png',
-    'Tomatodo': '/tomatodo.png',
-    'Gorro': '/gorro.png',
-    'Polo Piqué': '/polopique.png',
-    'Hoodie': '/hoodie.png'
+    'Medias': 'https://github.com/StalynJD/sorteoibk/blob/main/medias.png?raw=true',
+    'Tomatodo': 'https://github.com/StalynJD/sorteoibk/blob/main/tomatodo.png?raw=true',
+    'Gorro': 'https://github.com/StalynJD/sorteoibk/blob/main/gorro.png?raw=true',
+    'Polo Piqué': 'https://github.com/StalynJD/sorteoibk/blob/main/polopique.png?raw=true',
+    'Hoodie': 'https://github.com/StalynJD/sorteoibk/blob/main/hoodie.png?raw=true'
   };
   return imagenes[premio] || 'https://via.placeholder.com/120x120'; // Fallback a imagen por defecto si no se encuentra el premio
 }
